@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/Form_1.css">
+    <title></title>
+  </head>
+  <body style="background-image: url(https://json.tv/public/images/general/2016/09/30/20160930115852-2966.jpg); background-attachment: fixed; background-size: 100% 100%; ">
+     <!--Верхняя навигационная панель-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+        <a class="navbar-brand" href="index.html" style="color: white;">
+            <img src="img/icon.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Psychologist
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active" id="Nav">
+                <a class="nav-link" href="index.html" style="color: white;">Главная<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item" id="Nav">
+                <a class="nav-link" href="AboutMe.html" style="color: white;">Обо мне</a>
+              </li>
+              <li class="nav-item" id="Nav">
+                <a class="nav-link" href="Rules.html" style="color: white;">Правила работы</a>
+              </li>
+              <li class="nav-item" id="Nav">
+                <a class="nav-link " href="Questions.html" style="color: white;">FAQ</a>
+              </li>
+              <li class="nav-item" id="Nav">
+                <a class="nav-link " href="Blog.html" style="color: white;">Статьи</a>
+              </li>
+              <li class="nav-item" id="Nav">
+                <a class="nav-link" onclick="show('block')" href="#" style="color: orangered; font-weight: bold;">Задать вопрос</a>
+              </li>
+             </ul>
+           </div>
+            
+    </nav>
+    <!--Всплывающяя форма-->
+    <div  id="gray">
+      <div  id="window">
+        <i onclick="show('none')" class="fas fa-times" style="font-size: 20pt ;"></i>
+    <form >
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Адрес электронной почты</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          
+            <label for="exampleFormControlInput1">Ф.И.О</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Фамилия Имя Отчество">
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Номер телефона</label>
+          <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+7 ... ... .. ..">
+        </div>
+        <div class="form-group">
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-10 pt-0">Удобный способ связи: </legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                  <label class="form-check-label" for="gridRadios1">
+                    Звонок
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2">
+                    Почта
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+                  <label class="form-check-label" for="gridRadios3">
+                    WhatsApp
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4" >
+                  <label class="form-check-label" for="gridRadios4">
+                    SMS
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Опишите вопрос</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+     <button type="submit" id="SubBut">Отправить</button>
+      </form> 
+    </div>
+    </div>
+    
+    <h1 class="text-center" id="Blog_Head" style="z-index: 1; color: white; ">В путешествие к будущему</h1>  
+    
+
+    
+    <div class="container" id="Blog_text">
+      «В какой  сфере    трудитесь?» — это, один из самых популярных вопросов после первого- «Как вас зовут?». И если бы не его праздность и банальность, то подобный интерес не близко знакомого товарища к вашей жизни мог бы показаться проявлением бестактности. Но сегодня вы вряд ли встретите кого-то, кого можно шокировать или смутить подобным вопросом. У многих  уже есть готовые шаблоны,  в сформированные в  предыдущи х  разговорах.
+      Вопрос  о  профессии  часто показывает,  как важен  для окружающих ваш социальный статус Вопрос «Кем стать?»,  возникающий у  человека, при выборе  профессии, предполагает присвоение в процессе обучения определенных навыков и качеств, обозначающих человека, как представителя определенной социальной группы. То есть, изначально, при знакомстве вы формируете сознании собеседника образы,   которые связаны  с  родом его занятости . Ответ на пресловутое   «Где вы работаете?»  дает вашему собеседнику первое субъективное понятие  – о том, какими качествами вы обладаете, какое у вас образование и какой у вас  круг  общения. Все было бы хорошо, а каково людям, которые не любят свою работу и тем более не хотят быть с ней отождествленными. По статистике опросов, проводимых ежегодно рекрутинговыми корпорациями, только 50% - рады своей трудовой деятельности, 30%- работу не любят. а  10% – работу ненавидят, невеселая история- в этой группе больше всего молодежи. Казалось бы, цифра невелика, но ведь она говорит о переживаниях людей, которые день за днем занимаются нелюбимым делом, равнодушны к нему. Можно представить себе, как чувствует себя человек, учитывая, что проводить на нелюбимой работе он может большую  часть  времени. 
+      С проблемой нереализованности люди обращаются к тренингам и психологическим службам. Ведь  многие мечтают о самореализации и интересной работе . Трудно работать, имитируя вовлеченность, испытывая  не  интерес, а скуку.  Люди  часто  становятся  пустыми  , унылыми словно биороботы.
+      Если смысл сказанного вам близок – не откладывайте, начинайте слушать внутренний голос.
+      Путь к самореализации протекает по пути лучшего узнавания себя. Прямые вопросы и честные ответы на них, признание прошлых побед и поражений- лучшая дорога рефлексии, по которой можно прийти к профессии своей мечты.
+      Задавайте вопросы. Что не устраивает вас в вашей старой работе –должность, коллектив, зарплата и т.д.. От чего вы хотите избавиться, уйдя со старого места? Если же вы вообще не любите дело, которым занимаетесь, то, может быть,  стоит получить более подходящее вам образование, пройти переподготовку.   Чем интересуетесь, когда есть свободное время, есть ли у вас единомышленники? Вашим единомышленником может быть кто угодно: друг, коллега, родственник, знакомый.  Идея людей и общество могут сформировать сообщество для развития дальнейшей деятельности. Нет таких людей- не беда- вы сможете их найти, определив свои цели.  Важно думать, пробовать, рисковать. Может быть и не сразу новая профессия станет основным источником  дохода, но вы будете всегда в будущем, в перспективе развития, а это очень важно и  со временем обязательно принесет дивиденды. Важно быть готовым, к тому, что придется пожить на небольшую зарплату, в чем-то себе отказывать. Но отложенное удовольствие всегда приносит плоды.
+      Меняя жизнь трудно сохранить стабильность. Не бойтесь.  Не теряйте терпения. Если не получится – вы всегда сможете  вернуться к привычной для вас жизни. А если получится – то каждый ваш день будет наполнен радостью самореализации, творческими порывами, устремлением в будущее.
+      
+    </div>
+    
+
+
+   <!--Футер(нижняя часть)-->
+   <div class="container-fluid" style="background-color: #C8C7BF; box-shadow:inset  0px 0px 15px 3px gray;" id="footer">
+        
+    
+    <div class="footer">        
+     <p><b> Личный тел:</b>  WhatsApp 8-965-388-74-50</p>
+     <p><b>Личная почта:</b>  sukhikhvera@gmail.com </p>
+     <p><b>Ассистент (запись, вопросы по расписанию и оплате):</b> </p>
+     <p><b>Телефон ассистента:</b> 8-968-040-68-69</p>
+     <p><b>Почта ассистента:</b>  assistant.to.sv@gmail.com</p>
+     <!--Иконки социальных сетей-->
+     <div class="Icons">
+       <a href="#" style="color: orangered;">
+     <i class="fab fa-instagram" ></i>
+    </a>
+     <a href="#"  style="color: orangered;"s>
+     <i class="fab fa-whatsapp" ></i>
+    </a>
+    <a href="#">
+     <i class="fab fa-facebook-f" style="color: orangered; "></i>
+    </a>
+    <a href="#">
+     <i class="fas fa-envelope-open-text" style="color: orangered;" ></i>
+    </a>
+    </div>
+    </div>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4f52dc290d.js" crossorigin="anonymous"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

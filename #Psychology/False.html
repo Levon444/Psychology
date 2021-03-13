@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/Form_1.css">
+    <title>Обман</title>
+  </head>
+  <body style="background-image: url(https://i.imgur.com/Q33X3EX.jpg);background-attachment: fixed; background-size: 100% 100%;">
+     <!--Верхняя навигационная панель-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+        <a class="navbar-brand" href="index.html" style="color: white;">
+            <img src="img/icon.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Psychologist
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active" id="Nav">
+                <a class="nav-link" href="index.html" style="color: white;">Главная<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item" id="Nav">
+                <a class="nav-link" href="AboutMe.html" style="color: white;">Обо мне</a>
+              </li>
+              <li class="nav-item" id="Nav">
+                <a class="nav-link" href="Rules.html" style="color: white;">Правила работы</a>
+              </li>
+              <li class="nav-item" id="Nav">
+                <a class="nav-link " href="Questions.html" style="color: white;">FAQ</a>
+              </li>
+              <li class="nav-item" id="Nav">
+                <a class="nav-link " href="Blog.html" style="color: white;">Статьи</a>
+              </li>
+              <li class="nav-item" id="Nav">
+                <a class="nav-link" onclick="show('block')" href="#" style="color: orangered; font-weight: bold;">Задать вопрос</a>
+              </li>
+             </ul>
+           </div>
+            
+    </nav>
+    <!--Всплывающяя форма-->
+    <div  id="gray">
+      <div  id="window">
+        <i onclick="show('none')" class="fas fa-times" style="font-size: 20pt ;"></i>
+    <form >
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Адрес электронной почты</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          
+            <label for="exampleFormControlInput1">Ф.И.О</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Фамилия Имя Отчество">
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Номер телефона</label>
+          <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+7 ... ... .. ..">
+        </div>
+        <div class="form-group">
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-10 pt-0">Удобный способ связи: </legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                  <label class="form-check-label" for="gridRadios1">
+                    Звонок
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2">
+                    Почта
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+                  <label class="form-check-label" for="gridRadios3">
+                    WhatsApp
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4" >
+                  <label class="form-check-label" for="gridRadios4">
+                    SMS
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Опишите вопрос</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+     <button type="submit" id="SubBut">Отправить</button>
+      </form> 
+    </div>
+    </div>
+    
+    <h1 class="text-center" id="Blog_Head" style="z-index: 1; color: white; ">Обман</h1>  
+    
+
+    
+    <div class="container" id="Blog_text">
+      Ложь разлагающе действует на наш разум. Как собственная, как и чужая. Она затуманивает сознание. Взаимопонимание становится невозможно. Реальность собственное восприятие, мышление искажено, чувства притупляются , рождается подозрительность и делает нас недовольными и непродуктивными. Вынуждает уступать и подчиняться. Заставляет поверить в то, что мы сами виноваты в том, что не добились успеха. Не можем поверить в то, что нас обманывают и не можем поверить в правдивость услышанного. Даже если чувства говорят нам, что это соответствует действительности. Полуправда- тоже ложь. Подчинение обману оставляет травмы в душе. Обман-  черта характера, суждения о которой не бывают однозначными. Можно выявить однако самые распространенные его причины. Недостаток воспитания, фантазии и наивные детские мечты способны в зрелом возрасте трансформироваться в потребность не просто приукрасить действительность, а обманывать в глаза. <br>
+      Ввиду отсутствия внимания со стороны родителей, чрезмерной критики, насилия, унижения достоинства ребенок подрастая, испытывает  дефицит любви и  вынужден сочинять несуществующие вещи для того, чтобы добиться   похвалы и внимания. Человек вырастает, а потребность в повышении самооценки  остается, только теперь вместо родителей более широкое окружение: родственники, друзья, коллеги, а вместо похвалы – общественное признание. 
+      В попытках  скрыть свою проблему, люди с алкогольной и наркотической зависимостью часто обманывают  для того, чтобы  выманить деньги на свои пагубные привычки. В 2005 г. было найдено первое доказательство того, что у мозга патологического лжеца есть определенные отличия. Исследователи Университета Южной Калифорнии в Лос-Анджелесе во главе с представителями Колледжа литературы, искусств и наук Йелингом  Янгом и Эдрианом  Рэйном провели исследование среди группы волонтеров в возрасте от 21 до 45 лет. При анализе работы мозга лжецов выявились структурные аномалии. В префронтальной коре у них был уменьшен объем серого вещества (нейронов), в то время как белого – увеличен на 22 процента (это нервные волокна, соединяющие отделы мозга). Описываемая часть мозга связана и с обучением моральному поведению, и с ощущением раскаяния. Серое вещество состоит из мозговых клеток, а белое представляет собой как бы «соединительную проводку» между ними. Избыток белого вещества повышает способность патологических лжецов ко лжи и ослабляет их моральное сдерживание.<br> 
+      Человек  с заниженной самооценкой  придумывает различные истории, чтобы самому выглядеть более интересным собеседником. Часто самоутверждаясь за счет других. Его цель – повысить отток вашей энергии , привлечь ваше внимание и тем самым повысить уверенность в себе.<br>
+      Прочие психологические проблемы<br>
+      Симптомом психического нарушения может быть то, что человек врет на каждом шагу.<br>
+       Ложь может быть связана с такими психическими заболеваниями, как биполярное расстройство и синдром  гиперактивности  с дефицитом внимания. Такое поведение можно связать со страхом, чувством вины либо стыда. Но помните, что не каждый человек с такими заболеваниями патологический обманщик.<br>
+      Как распознать патологического лжеца.<br> 
+      Эти люди лгут на каждом шагу по поводу и без повода. Их не мучают угрызения совести, и они продолжают, обманывая  собеседника, развивать свои фантазии. Их рассказы могут быть  в высшей степени нелогичными. Они не могут  держать под контролем эмоции и,   часто меняют содержание одной и той же истории.. С взрослением патология только увеличивается, и таким людям становится невозможно  побороть  свою склонность. Ради того, чтобы к ним не иссякал интерес, лжецы способны на все: без проблем «похоронить» родного отца или сына – лишь бы решить поставленную задачу. Если попытаться уличить такого человека во лжи, можно столкнуться с агрессией, так как он считает себя всегда правым.<br>
+       Сложности в общении с паталогическим вруном.<br>
+       Хорошо если у вас есть возможность прекратить общение с патологическим лжецом. Тогда  нет необходимости продолжать выслушивать его небылицы. Однако такой человек может быть членом вашей семьи или входить в круг близких знакомых, коллег. <br>
+      Если общения с вруном не избежать: <br>
+      <p>
+      • Когда нас обманываю т, мы можем  испытывать  чувства гнева, разочарования или обиды. Необходимо включить критическое мышление  и  понять, что заставляет человека лгать в данный момент, что им движет, какую цель он преследует. Поняв истинную подоплеку такого стиля поведения, вы сможете успокоиться, и, возможно, даже проявите сочувствие. <br>
+      •Какими бы правдоподобными они ни представлялись, не верьте  в его сказки и фантазии. Постарайтесь держать нейтральную позицию без эмоциональной включенности. Заинтересованность в разговоре, вдохновляет обманщика на новые фантазии. Сомневайтесь, пока вы не сможете убедиться в том, что он говорит правду. Уведомите его в том, что соотнесете полученную информацию с достоверными фактами.<br>
+      • Не надейтесь на то, что патологический лжец изменится и начнет говорить правду. <br>
+      •  С такими людьми сложно жить или работать: как определить, где правда, а где обман? Поэтому, в таких случаях,  не надо терпеть и молчать. Правильнее будет, если вы сообщите собеседнику, что в его историях часты нестыковки и попросить рассказать еще раз. Манипуляции в общении почти всегда вызывает чувство протеста, так как это принуждение.<br>
+      </p>                                                                                               
+      
+    </div>
+    
+
+   <!--Футер(нижняя часть)-->
+   <div class="container-fluid" style="background-color: #C8C7BF; box-shadow:inset  0px 0px 15px 3px gray;" id="footer">
+        
+    
+    <div class="footer">        
+     <p><b> Личный тел:</b>  WhatsApp 8-965-388-74-50</p>
+     <p><b>Личная почта:</b>  sukhikhvera@gmail.com </p>
+     <p><b>Ассистент (запись, вопросы по расписанию и оплате):</b> </p>
+     <p><b>Телефон ассистента:</b> 8-968-040-68-69</p>
+     <p><b>Почта ассистента:</b>  assistant.to.sv@gmail.com</p>
+     <!--Иконки социальных сетей-->
+     <div class="Icons">
+       <a href="#" style="color: orangered;">
+     <i class="fab fa-instagram" ></i>
+    </a>
+     <a href="#"  style="color: orangered;"s>
+     <i class="fab fa-whatsapp" ></i>
+    </a>
+    <a href="#">
+     <i class="fab fa-facebook-f" style="color: orangered; "></i>
+    </a>
+    <a href="#">
+     <i class="fas fa-envelope-open-text" style="color: orangered;" ></i>
+    </a>
+    </div>
+    </div>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4f52dc290d.js" crossorigin="anonymous"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

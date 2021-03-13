@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/Form_1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <title></title>
+  </head>
+  
+  <body style="background-image:url( https://www.firestock.ru/download/s/61jiwoez2o9gwv4/Dollarphotoclub_62526017.jpg?dl=0 ); background-attachment: fixed; background-size: 100% 100%;">
+ 
+  <!--Верхняя навигационная панель-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+    <a class="navbar-brand" href="index.html" style="color: white;">
+        <img src="img/icon.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Psychologist
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active" id="Nav">
+            <a class="nav-link" href="index.html" style="color: white;">Главная<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" id="Nav">
+            <a class="nav-link" href="AboutMe.html" style="color: white;">Обо мне</a>
+          </li>
+          <li class="nav-item" id="Nav">
+            <a class="nav-link" href="Rules.html" style="color: white;">Правила работы</a>
+          </li>
+          <li class="nav-item" id="Nav">
+            <a class="nav-link " href="Questions.html" style="color: white;">FAQ</a>
+          </li>
+          <li class="nav-item" id="Nav">
+            <a class="nav-link " href="Blog.html" style="color: white;">Статьи</a>
+          </li>
+          <li class="nav-item" id="Nav">
+            <a class="nav-link" onclick="show('block')" href="#" style="color: orangered; font-weight: bold;">Задать вопрос</a>
+          </li>
+         </ul>
+       </div>
+        
+</nav>
+<!--Всплывающяя форма-->
+<div  id="gray">
+  <div  id="window">
+    <i onclick="show('none')" class="fas fa-times" style="font-size: 20pt ;"></i>
+<form >
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Адрес электронной почты</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+      
+        <label for="exampleFormControlInput1">Ф.И.О</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Фамилия Имя Отчество">
+      
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Номер телефона</label>
+      <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+7 ... ... .. ..">
+    </div>
+    <div class="form-group">
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-10 pt-0">Удобный способ связи: </legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+              <label class="form-check-label" for="gridRadios1">
+                Звонок
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Почта
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+              <label class="form-check-label" for="gridRadios3">
+                WhatsApp
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4" >
+              <label class="form-check-label" for="gridRadios4">
+                SMS
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Опишите вопрос</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+ <button type="submit" id="SubBut">Отправить</button>
+  </form> 
+</div>
+</div>
+  
+    <h1 class="text-center" id="FHead">ПРАВИЛА РАБОТЫ</h1>
+    <h2 class="text-center" id="SHead">Пожалуйста, ознакомьтесь с правилами, которые касаются организации встреч, оплаты, отмены и переноса встреч, а также помогают создать комфортное и безопасное пространство для психологической работы.</h2>
+<div class="container-fluid" id="GeoBlock">
+<div class="row">
+    <div class="col-md-4 col-sm-12" id="GeoText">
+        <h2 class="text-left">
+            Как найти
+        </h2>
+     <p class="text-left">
+        Последний переулок, дом 5с1<br>
+       <span style="font-weight: bold;"> Код на воротах *5152#</span><br>
+        Дальше прямо в арку и в дом справа.<br>
+        Если заблудились, звоните администратору<br>
+        <span style="font-weight: bold;"> +7 995 794-02-08</span><br>
+        Парковка только платная городская в переулках.<br>
+     </p>   
+    </div>
+    <div class="col-md-8 col-sm-12" id="GEO">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2d3c03a74564abff624ffe795cb6c26f2afc58bcff2ede8fc8943e69e878aa60&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    
+</div>
+<div class="row">
+    <div class="col">
+        <div  id="GeoImages">
+          <a href="img/Gallery(Big)/Your_Portfolio(BIG).jpg" data-fancybox="gallery" data-caption="Sertificate #1">
+            <img src="img/Gallery(small)/Your_Portfolio.jpg" alt=""  id="Photo"/>
+          </a>
+          
+          <a href="img/Gallery(Big)/Your_Portfolio1(BIG).jpg" data-fancybox="gallery" data-caption="Sertificate #2">
+            <img src="img/Gallery(small)/Your_Portfolio1.jpg" alt=""  id="Photo" />
+          </a>
+          <a href="img/Gallery(Big)/Your_Portfolio2(BIG).jpg" data-fancybox="gallery" data-caption="Sertificate #3">
+            <img src="img/Gallery(small)/Your_Portfolio2.jpg" alt=""  id="Photo" />
+          </a>
+          
+          <a href="img/Gallery(Big)/Your_Portfolio3(BIG).jpg" data-fancybox="gallery" data-caption="Sertificate #4">
+            <img src="img/Gallery(small)/Your_Portfolio3.jpg" alt=""  id="Photo" />
+          </a>
+        </div>
+    </div>
+      </div>
+</div>
+   <div class="container-fluid" style="background-color: white; box-shadow: inset -2px 0px 20px 8px rgb(225, 225, 221)  ;" >
+       <div class="container" id="Algorithm">
+<h1 class="text-center"  style="padding-bottom: 3%;">Порядок оплаты</h1>
+<p style="padding-top: 3%;">
+    <i class="far fa-check-circle" style="color: orangered; font-size: 50px;float:all;"></i> <b>Предоплата</b><br>
+Все консультации проводятся по предоплате, которая вносится в любое время с момента получения счета и не позднее его срока действия (указан в счете). Это позволяет гарантировать наличие свободного времени в расписании тем, кто действительно в этом нуждается.
+</p>
+<p style="padding-top: 3%;">
+    <i class="far fa-check-circle" style="color: orangered; font-size: 50px;float:all;"></i> <b> Как оплатить</b><br>
+После подтверждения встречи Вам на почту или в смс придёт ссылка, по которой нужно произвести оплату.
+</p>
+<p style="padding-top: 3%;">
+    <i class="far fa-check-circle" style="color: orangered; font-size: 50px;float:all;"></i><b> Как оплатить</b><br>
+После подтверждения встречи Вам на почту или в смс придёт ссылка, по которой нужно произвести оплату.
+</p>
+<p style="padding-top: 3%;">
+    <i class="far fa-check-circle" style="color: orangered; font-size: 50px;float:all;"></i><b> Способы оплаты</b><br>
+Доступны разные способы оплаты по счёту:<br>
+<ul>
+    <li>Банковская карта</li>
+    <li>Apple и GooglePay</li>
+    <li>Сбербанк онлайн</li>
+    <li>Яндекс. Деньги</li>
+    <li>Альфа-клик</li>
+</ul>
+</p>
+<h1 class="text-center" style="padding-top: 3%;  padding-bottom: 3%; "> Отмена, перенос, возврат</h1>
+<p style="padding-top: 3%;">
+    <i class="far fa-check-circle" style="color: orangered; font-size: 50px;float:all;"></i><b >Отмена и перенос</b><br>
+    <ul>
+        <li>Отмена или перенос встречи возможны не позднее, чем за 24 часа до назначенного времени. В случае более поздней отмены пропущенная консультация оплачивается в полном размере.</li>
+        <li>Это правило действует для всех форматов работы</li>
+        <li>Если у Вас забронировано постоянное время, то в случае своевременного извещения пропущенная сессия просто переносится на другое свободное время или на неделю вперед.</li>
+        <li>Если Вы пропускаете встречу группы, то сможете восполнить этот пропуск в следующем цикле.</li>
+        <li>Если поздняя отмена или перенос происходят по моей инициативе, то следующая наша встреча будет бесплатной для Вас.</li>
+    </ul>
+</p>
+<p style="padding-top: 3%;">    
+    <i class="far fa-check-circle" style="color: orangered; font-size: 50px;float:all;"></i> <b>Опоздания</b><br>
+    Опоздания не сдвигают время проведения консультации, а фактически уменьшают его. По возможности я могу немного компенсировать время за счёт своего перерыва, но это скорее исключение, чем правило.
+</p>
+<p style="padding-top: 3%;">
+    <i class="far fa-check-circle" style="color: orangered; font-size: 50px;float:all;"></i><b>Возврат</b><br>
+Возврат предоплаты в полном объёме возможен в случае отмены не позднее, чем за 24 часа до назначенного времени. Сроки возврата зависят от финансовых организаций, которые осуществляют рассчётные операции.
+</p>
+<h1 class="text-center"  style="padding-top: 3%;  padding-bottom: 3%;">Другие важные моменты</h1>
+<p style="padding-top: 3%;">
+    <i class="far fa-check-circle" style="color: orangered; font-size: 50px;float:all;"></i> <b>Предварительное знакомство</b><br>
+    Здесь собраны ответы на самые частые вопросы новых клиентов: в каком подходе работаю, с какими проблемами, когда и каким будет результат, как проходят встречи и др. Читать не обязательно:) В любом случае я отвечу на все вопросы при встрече.
+</p>
+<p style="padding-top: 3%;"> 
+    <i class="far fa-check-circle" style="color: orangered; font-size: 50px;float:all;"></i> <b>Конфиденциальность</b><br>
+    Вся информация о клиенте носит строго конфиденциальный характер. Я не описываю кейсы клиентов в соцсетях. Записи, которые делаются на встрече, служат единственной цели - быть опорным материалом в процессе работы.
+</p>
+<p style="padding-top: 3%;">
+    <i class="far fa-check-circle" style="color: orangered; font-size: 50px;float:all;"></i> <b>Контакты между встречами</b><br>
+    Помимо решения организационных вопросов, между встречами по необходимости высылаю дополнительную информацию: литературу, упражнения, контакты других специалистов. Содержательная переписка или звонки не приветствуются.
+</p>
+<p style="padding-top: 3%;">
+    <i class="far fa-check-circle" style="color: orangered; font-size: 50px;float:all;"></i> <b>Перерывы в работе</b><br>
+    Прошу с пониманием отнестись к тому, что в нашей совместной работе могут возникать перерывы, связанные с моими отпусками, рабочими поездками или болезнями (о которых я, разумеется, стараюсь предупреждать заранее).
+Вы также можете брать паузы, если того требуют обстоятельства или Ваше внутреннее состояние.
+</p>
+<p style="padding-top: 3%;">
+    <i class="far fa-check-circle" style="color: orangered; font-size: 50px;float:all;"></i> <b>Завершение работы</b><br>
+    При длительной работе важно, чтобы на завершение и подведение итогов было отведено время. Поэтому если Вы решили прекратить работу, сообщите об этом до начала последней встречи.
+</p>
+<h1 class="text-center"  style="padding-top: 3%; padding-bottom: 3%;">Консультации по видеосвязи</h1>
+<p style="padding-top: 3%;">
+    <i class="far fa-check-circle" style="color: orangered; font-size: 50px;float:all;"></i> <b>Преимущества и ограничения</b><br>
+    Онлайн консультирование имеет как преимущества, так и некоторые ограничения. К преимуществам можно отнести доступность из любой точки, экономию времени на дорогу. Такой формат подходит людям, которые часто путешествуют/много работают/с маленькими детьми. Однако отсутствие физического контакта может затруднять установление доверительного рабочего контакта и ограничивать переход на более глубинную работу, некоторые упражнения сложно провести в онлайне.
+</p>
+<p style="padding-top: 3%;">
+    <i class="far fa-check-circle "style="color: orangered; font-size: 50px;float:all;"></i> <b>Организация пространства</b><br>
+    При работе по видеосвязи ответственность за подготовку рабочего пространства частично ложится на Вас. Вот на что нужно обратить внимание:<br>
+    <ul>
+        <li>хорошая работа Интернета, устройства и приложений,</li>
+        <li>место должно быть спокойным и безопасным: никто не должен заходить, заглядывать, разговаривать параллельно и т.д.,</li>
+        <li>во время сессии так же, как и на очной встрече, не нужно курить/принимать пищу/заниматься другими посторонними делами,</li>
+        <li>позаботьтесь о своём комфорте, чтобы не было слишком холодно/жарко/тесно/шумно и т.д. Поставьте для себя стакан воды.</li>
+        <li>постарайтесь сесть так, чтобы лицо было полностью видно, а лучше даже немного больше - по грудь.</li>
+    </ul>
+</p>
+<p style="padding-top: 3%;">
+    <i class="far fa-check-circle" style="color: orangered; font-size: 50px;float:all;"></i> <b>Время и часовые пояса</b><br>
+    Не забудьте про разницу в часовом поясе! Время встречи - по Мск
+</p>
+       </div>
+   </div>
+   <!--Футер-->
+    <div class="container-fluid" style="background-color: #C8C7BF; box-shadow:inset  0px 0px 15px 3px gray;" id="footer">
+        
+    
+        <div class="footer">        
+         <p><b> Личный тел:</b>  WhatsApp 8-965-388-74-50</p>
+         <p><b>Личная почта:</b>  sukhikhvera@gmail.com </p>
+         <p><b>Ассистент (запись, вопросы по расписанию и оплате):</b> </p>
+         <p><b>Телефон ассистента:</b> 8-968-040-68-69</p>
+         <p><b>Почта ассистента:</b>  assistant.to.sv@gmail.com</p>
+         <!--Иконки социальных сетей-->
+         <div class="Icons">
+           <a href="#" style="color: orangered;">
+         <i class="fab fa-instagram" ></i>
+        </a>
+         <a href="#"  style="color: orangered;"s>
+         <i class="fab fa-whatsapp" ></i>
+        </a>
+        <a href="#">
+         <i class="fab fa-facebook-f" style="color: orangered; "></i>
+        </a>
+        <a href="#">
+         <i class="fas fa-envelope-open-text" style="color: orangered;" ></i>
+        </a>
+        </div>
+        </div>
+      </div>
+  
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://kit.fontawesome.com/4f52dc290d.js" crossorigin="anonymous"></script>
+    
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

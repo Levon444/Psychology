@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/Form_1.css">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />  
+<title>About Me</title>
+  </head>
+  <body>
+    <!--Верхняя навигационная панель-->
+    <!--Верхняя навигационная панель-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+      <a class="navbar-brand" href="index.html" style="color: white;">
+          <img src="img/icon.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          Psychologist
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active" id="Nav">
+              <a class="nav-link" href="index.html" style="color: white;">Главная<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" id="Nav">
+              <a class="nav-link" href="AboutMe.html" style="color: white;">Обо мне</a>
+            </li>
+            <li class="nav-item" id="Nav">
+              <a class="nav-link" href="Rules.html" style="color: white;">Правила работы</a>
+            </li>
+            <li class="nav-item" id="Nav">
+              <a class="nav-link " href="Questions.html" style="color: white;">FAQ</a>
+            </li>
+            <li class="nav-item" id="Nav">
+              <a class="nav-link " href="Blog.html" style="color: white;">Статьи</a>
+            </li>
+            <li class="nav-item" id="Nav">
+              <a class="nav-link" onclick="show('block')" href="#" style="color: orangered; font-weight: bold;">Задать вопрос</a>
+            </li>
+           </ul>
+         </div>
+          
+  </nav>
+  <!--Всплывающяя форма-->
+  <div  id="gray">
+    <div  id="window">
+      <i onclick="show('none')" class="fas fa-times" style="font-size: 20pt ;"></i>
+  <form >
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Адрес электронной почты</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        
+          <label for="exampleFormControlInput1">Ф.И.О</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Фамилия Имя Отчество">
+        
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Номер телефона</label>
+        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+7 ... ... .. ..">
+      </div>
+      <div class="form-group">
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-10 pt-0">Удобный способ связи: </legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                <label class="form-check-label" for="gridRadios1">
+                  Звонок
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Почта
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+                <label class="form-check-label" for="gridRadios3">
+                  WhatsApp
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4" >
+                <label class="form-check-label" for="gridRadios4">
+                  SMS
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Опишите вопрос</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+   <button type="submit" id="SubBut">Отправить</button>
+    </form> 
+  </div>
+</div>
+    <!--Панель с информацией о себе-->
+ <div class="container-fluid" style="margin-bottom: 3% ;">
+<!--Карточка с информацией (для редакции)-->
+    <div class="card text-center">
+        <div class="card-header" >
+          <img src="img/AboutMe_Header.jpg" alt="" id="AboutMe_Header">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title"
+          >Образование</h2>
+          <p class="card-text">2001 - 2006, МГУ им. Ломоносова, ф-т психологии, специализация по клинической психологии
+            Дополнительное образование в области консультирования и психотерапии (сертификаты международного образца, личная терапия), состою в профессиональных сообществах (Международная Ассоциация Групповой психотерапии и групповых процессов (IAGP), Профессиональная Психотерапевтическая Лига).
+            Являюсь сертифицированным тренером и методологом обучающих программ.</p>
+          
+        </div>
+        
+      </div>
+ </div>
+ <!--Документы об образовании-->
+ 
+  <p class="text-center">
+     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="Sertificates">
+      Документы об образовании
+    </button>
+  </p>
+  <div class="collapse" class="container-fluid" id="collapseExample"  >
+    <div class="card card-body" id="Documents">
+      <a href="img/Gallery(Big)/Your_Portfolio(BIG).jpg" data-fancybox="gallery" data-caption="Sertificate #1">
+        <img src="img/Gallery(small)/Your_Portfolio.jpg" alt=""  id="Photo"/>
+      </a>
+      
+      <a href="img/Gallery(Big)/Your_Portfolio1(BIG).jpg" data-fancybox="gallery" data-caption="Sertificate #2">
+        <img src="img/Gallery(small)/Your_Portfolio1.jpg" alt=""  id="Photo" />
+      </a>
+      <a href="img/Gallery(Big)/Your_Portfolio2(BIG).jpg" data-fancybox="gallery" data-caption="Sertificate #3">
+        <img src="img/Gallery(small)/Your_Portfolio2.jpg" alt=""  id="Photo" />
+      </a>
+      
+      <a href="img/Gallery(Big)/Your_Portfolio3(BIG).jpg" data-fancybox="gallery" data-caption="Sertificate #4">
+        <img src="img/Gallery(small)/Your_Portfolio3.jpg" alt=""  id="Photo" />
+      </a>
+    </div>
+  </div>
+ 
+ <!--Блок с описанием сферы деятельности-->
+ <div class="container" id="Field_of_activity">
+<h1 class="text-center" style="border-bottom: 3px solid orangered; padding-bottom: 20px;">
+  Сферы деятельности
+</h1>
+<p class="text-center" style="padding-bottom: 5%;">
+  С 2005 года работаю в качестве психолога-консультанта и ведущего групп в различных организациях - в сфере медицины, образования, бизнеса, а также частным образом. Несколько лет преподавала психологические дисциплины студентам-психологам в коммерческих и государственных вузах.
+  В2011-2015 руководила созданием учебного центра одного из крупнейших агентств недвижимости Москвы. Параллельно училась в аспирантуре, и с этого начался мой интерес к проблемам в образовании. Последние несколько лет параллельно с консультированием курирую проекты по развитию педагогических команд и руководителей детских садов в Центре образовательных инноваций Шаг. Преподаю и занимаюсь наукой на ф-те психологии МГУ им. Ломоносова.
+</p>
+ </div>
+ <!--Дополнительная информация-->
+ 
+ <div class="container" id="SecondBlock">
+  <div class="row">
+     <div class="col-md-6 col-sm-10" id="Addr">
+      <img src="img/AboutMe_Header.jpg" alt="Помещение" style="float: left; margin-top: 2%;margin-left: 4%; border-radius: 30px; z-index: 1; width: 80%;height: 80%; margin-bottom: 3%;" >
+      </div>
+  <div class="col-md-6 col-sm-10" id="Addr">
+      <p class="text-left" id="Inform">
+        Моя задача заключается в том, чтобы показать иной<br> способ видеть, понимать, оценивать и переживать происходящие события.<br> Это даёт возможность делать другие жизненные выборы, и так происходят изменения.<br>
+        Я верю в людей, в неоднозначность, многогранность каждого явления и предпочитаю науку бытовой мудрости.
+      </p>
+
+         
+        </div>
+       
+    </div>
+</div> 
+ 
+
+    <!--Футер(нижняя часть)-->
+    <div class="container-fluid" style="background-color: #C8C7BF; box-shadow:inset  0px 0px 15px 3px gray;" id="footer">
+        
+    
+        <div class="footer">        
+         <p><b> Личный тел:</b>  WhatsApp 8-965-388-74-50</p>
+         <p><b>Личная почта:</b>  sukhikhvera@gmail.com </p>
+         <p><b>Ассистент (запись, вопросы по расписанию и оплате):</b> </p>
+         <p><b>Телефон ассистента:</b> 8-968-040-68-69</p>
+         <p><b>Почта ассистента:</b>  assistant.to.sv@gmail.com</p>
+         <!--Иконки социальных сетей-->
+         <div class="Icons">
+           <a href="#" style="color: orangered;">
+         <i class="fab fa-instagram" ></i>
+        </a>
+         <a href="#"  style="color: orangered;"s>
+         <i class="fab fa-whatsapp" ></i>
+        </a>
+        <a href="#">
+         <i class="fab fa-facebook-f" style="color: orangered; "></i>
+        </a>
+        <a href="#">
+         <i class="fas fa-envelope-open-text" style="color: orangered;" ></i>
+        </a>
+        </div>
+        </div>
+      </div>
+
+    
+
+   
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4f52dc290d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
